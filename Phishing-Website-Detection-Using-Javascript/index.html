@@ -1,0 +1,67 @@
+<html>
+    <head>
+       <script type="text/JavaScript">
+       function fn1()
+       {
+           
+       var str1 = document.getElementById("inpu").value;
+       var str2="www.google.com";
+       var str3="www.yahoo.com";
+       var str4="http://apple.com/";
+       var str5="www.youtube.com";
+       var str6="www.blogger.com";
+       var str7="www.microsoft.com";
+
+              
+var n1=str1.localeCompare(str2);
+var n2=str1.localeCompare(str3);
+var n3=str1.localeCompare(str4);
+var n4=str1.localeCompare(str5);
+var n5=str1.localeCompare(str6);
+
+    if(n1==0)
+    {
+        document.getElementById("lala").innerHTML = "Legitimate ";
+    }
+     else if(n2==0)
+     {
+        document.getElementById("lala").innerHTML = "Legitimate ";
+     }
+     else if(n3==0)
+     {
+        document.getElementById("lala").innerHTML = "Legitimate ";
+     }
+     else if(n4==0)
+     {
+        document.getElementById("lala").innerHTML = "Legitimate ";
+     }
+     else if(n5==0)
+     {
+        document.getElementById("lala").innerHTML = "Legitimate ";
+     }
+     else
+     {
+        document.getElementById("lala").innerHTML = "Phishing ";
+     }
+         
+       }
+       </script>       
+    </head>
+    <body style="background-image: url('background.jpeg')";>
+       <center>
+        <div>
+        <h1> Phishing Website Detection </h1>
+        <br>
+        <br>
+        <input id="inpu"  size="50">
+        <br>
+        <br>
+        <br>
+        <button onclick="fn1()" id="btn" > Search 
+        </button>
+        <br>
+        <div id="lala"></div>
+        </div>
+    </center>
+    </body>
+</html>
